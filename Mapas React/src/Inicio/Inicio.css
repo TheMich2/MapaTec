@@ -1,0 +1,69 @@
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: url('http://www.oaxaca.tecnm.mx/storage/app/media/blog_imgs/fotos%202023/pre6.jpg') center center / cover no-repeat;
+  }
+  
+  .principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Ajusta la transparencia */
+    z-index: 1;
+  }
+  
+  .contenedor {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .contenedor img {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 25px;
+  }
+  
+  .contenedor p {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    color: #053364;
+  }
+  
+  .entrar {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .administrador {
+    padding: 5px;
+    margin-top: 7px;
+    font-size: 10px;
+    color: black;
+    background: none;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+  }
+
+  .administrador:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .entrar button:hover {
+    background-color: #0056b3;
+  }
+  
